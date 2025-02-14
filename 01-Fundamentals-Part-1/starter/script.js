@@ -184,12 +184,12 @@ let js = 'amazing';
 //     console.log(`Why not ${bias}`)
 // }
 
-const hasDriversLicence = true; // A
-const hasGoodVision = true; // B
+// const hasDriversLicence = true; // A
+// const hasGoodVision = true; // B
 
-console.log(hasDriversLicence && hasGoodVision);
-console.log(hasDriversLicence || hasGoodVision);
-console.log(!hasDriversLicence);
+// console.log(hasDriversLicence && hasGoodVision);
+// console.log(hasDriversLicence || hasGoodVision);
+// console.log(!hasDriversLicence);
 
 // const shouldDrive = hasDriversLicence && hasGoodVision;
 // if(shouldDrive){
@@ -198,12 +198,12 @@ console.log(!hasDriversLicence);
 //     console.log("Book a grab car")
 // }
 
-const isTired =  false;
-console.log(hasDriversLicence && hasGoodVision && isTired);
+// const isTired =  false;
+// console.log(hasDriversLicence && hasGoodVision && isTired);
 
-const shouldDrive = hasDriversLicence && hasGoodVision && !isTired;
-if(shouldDrive){
-    console.log("Leroy Jenkins can drive")
-} else {
-    console.log("Book a grab car")
-}
+// const shouldDrive = hasDriversLicence && hasGoodVision && !isTired;
+// if(shouldDrive){
+//     console.log("Leroy Jenkins can drive")
+// } else {
+//     console.log("Book a grab car")
+// }
