@@ -160,26 +160,50 @@ let js = 'amazing';
 //     console.log("Wheres your height. It's undefined"); 
 // }
 
-const age = '18';
-if (age === 18) console.log("You just became an adult"); // strict comparison, if ==, it performs type coersion so its loose comparison
+// const age = '18';
+// if (age === 18) console.log("You just became an adult"); // strict comparison, if ==, it performs type coersion so its loose comparison
 
-if (age == 18) console.log("You just became an adult (loose)"); 
+// if (age == 18) console.log("You just became an adult (loose)"); 
 
-const favorite = Number(prompt("What is your fav number?"));
-console.log(favorite);
-console.log(typeof(favorite));
+// const favorite = Number(prompt("What is your fav number?"));
+// console.log(favorite);
+// console.log(typeof(favorite));
 
-const bias = 69;
-const second_bias = 420
+// const bias = 69;
+// const second_bias = 420
 
-if (favorite === bias) {
-    console.log(`Nice. ${bias} is nice`);
-} else if(favorite === second_bias){
-    console.log(`${second_bias} is also a cool number`)
+// if (favorite === bias) {
+//     console.log(`Nice. ${bias} is nice`);
+// } else if(favorite === second_bias){
+//     console.log(`${second_bias} is also a cool number`)
+// } else {
+//     console.log(`Nobody cares if your favorite number is ${favorite}`);
+// }
+
+// if (favorite !== bias){
+//     console.log(`Why not ${bias}`)
+// }
+
+const hasDriversLicence = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriversLicence && hasGoodVision);
+console.log(hasDriversLicence || hasGoodVision);
+console.log(!hasDriversLicence);
+
+// const shouldDrive = hasDriversLicence && hasGoodVision;
+// if(shouldDrive){
+//     console.log("Leroy should drive")
+// } else {
+//     console.log("Book a grab car")
+// }
+
+const isTired =  false;
+console.log(hasDriversLicence && hasGoodVision && isTired);
+
+const shouldDrive = hasDriversLicence && hasGoodVision && !isTired;
+if(shouldDrive){
+    console.log("Leroy Jenkins can drive")
 } else {
-    console.log(`Nobody cares if your favorite number is ${favorite}`);
-}
-
-if (favorite !== bias){
-    console.log(`Why not ${bias}`)
+    console.log("Book a grab car")
 }
