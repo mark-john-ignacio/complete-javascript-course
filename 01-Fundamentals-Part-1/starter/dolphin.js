@@ -2,25 +2,32 @@
 
 
 const dolphins = [96, 108, 89];
-const koalas = [88, 91, 110];
+const koalas = [88, 91, 125];
+const minimum = 100;
 
-let sum_dolphins = 0;
-dolphins.forEach(score =>{
-    sum_dolphins += score
-});
+const sum_dolphins = dolphins.reduce((accumulator, currentValue)=>{
+    return accumulator + currentValue;
+}, 0);
 
 const sum_koalas = koalas.reduce((accumulator, currentValue) => {
     return accumulator + currentValue;
 }, 0);
 
-console.log(sum_dolphins);
-console.log(sum_koalas);
 
 
 // average
 const scoreDolphins = sum_dolphins / dolphins.length
 const scoreKoalas = sum_koalas / koalas.length
 
+console.log(`Dolphins average: ${scoreDolphins}`);
+console.log(`Koalas average: ${scoreKoalas}`)
 
-console.log(scoreDolphins);
-console.log(scoreKoalas);
+if (scoreDolphins > scoreKoalas && scoreDolphins >= minimum) {
+    console.log("Dolphins win the trophy")
+} else if (scoreDolphins < scoreKoalas && scoreKoalas >= minimum) {
+    console.log("Koalas win the trophy")
+}else if (scoreDolphins < scoreKoalas && scoreDolphins >= minimum && scoreKoalas >= minimum){
+    console.log("Both win the trophy")
+}else{
+    console.log("No one wins the trophy")
+}
