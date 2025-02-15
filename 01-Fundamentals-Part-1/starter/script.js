@@ -208,40 +208,59 @@ let js = 'amazing';
 //     console.log("Book a grab car")
 // }
 
-const day = prompt('What day is today?', 'monday');
+// const day = prompt('What day is today?', 'monday');
 
-switch(day){
-    case 'monday':
-        console.log('Hotdogs')
-        break;
-    case 'tuesday':
-        console.log('Pizza')
-        break;
-    case 'wednesday':
-    case 'thursday':
-        console.log('Pasta')
-        break;
-    case 'friday':
-        console.log('Ramen')
-        break;
-    case 'saturday':
-    case 'sunday':
-        console.log('Sushi')
-        break;
-    default:
-        console.log('Invalid day')
+// switch(day){
+//     case 'monday':
+//         console.log('Hotdogs')
+//         break;
+//     case 'tuesday':
+//         console.log('Pizza')
+//         break;
+//     case 'wednesday':
+//     case 'thursday':
+//         console.log('Pasta')
+//         break;
+//     case 'friday':
+//         console.log('Ramen')
+//         break;
+//     case 'saturday':
+//     case 'sunday':
+//         console.log('Sushi')
+//         break;
+//     default:
+//         console.log('Invalid day')
+// }
+
+// if (day === 'monday'){
+//     console.log('coke')
+// }else if (day === 'tuesday'){
+//     console.log('pepsi')
+// }else if (day === 'wednesday' || day === 'thursday'){
+//     console.log('sprite')
+// }else if (day === 'friday'){
+//     console.log('royal')
+// }else if (day === 'saturday' || day === 'sunday'){
+//     console.log('water')
+// }else{
+//     console.log('invalid day')
+// }
+
+const age = 19;
+
+age >= 18 ? console.log('I like alcohol 🍷') : console.log('I have not tasted alcohol in my life')
+
+const drink = age >= 18 ? 'wine' : 'Water';
+console.log(drink);
+
+let drink2
+
+if (age >= 18){
+    drink2 = 'wine';
+} else {
+    drink2 = 'water';
 }
 
-if (day === 'monday'){
-    console.log('coke')
-}else if (day === 'tuesday'){
-    console.log('pepsi')
-}else if (day === 'wednesday' || day === 'thursday'){
-    console.log('sprite')
-}else if (day === 'friday'){
-    console.log('royal')
-}else if (day === 'saturday' || day === 'sunday'){
-    console.log('water')
-}else{
-    console.log('invalid day')
-}
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`)
