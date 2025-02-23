@@ -16,3 +16,31 @@ function logger() {
 // calling / running / invoking
 logger();
 logger();
+
+function fruitProcessor(apples, oranges) {
+  console.log(apples, oranges);
+  const juice = `Juice with ${apples} apples and ${oranges} oranges`;
+
+  return juice;
+}
+
+const appleJuice = fruitProcessor(4, 0);
+console.log(appleJuice);
+
+const appleOrangeJuice = fruitProcessor(5, 5);
+console.log(appleOrangeJuice);
+
+const age1 = calcAge1(2001);
+console.log(`My age is 2037 is ${age1}`);
+// function declaration
+function calcAge1(birthYear) {
+  return 2037 - birthYear;
+}
+
+//function expression
+const calcAge2 = function (birthYear) {
+  return 2037 - birthYear;
+};
+
+const age2 = calcAge2(2001);
+console.log(age1, age2);
