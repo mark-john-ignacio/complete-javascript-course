@@ -246,20 +246,29 @@ let js = 'amazing';
 //     console.log('invalid day')
 // }
 
-const age = 19;
+// const age = 19;
 
-age >= 18 ? console.log('I like alcohol 🍷') : console.log('I have not tasted alcohol in my life')
+// age >= 18 ? console.log('I like alcohol 🍷') : console.log('I have not tasted alcohol in my life')
 
-const drink = age >= 18 ? 'wine' : 'Water';
-console.log(drink);
+// const drink = age >= 18 ? 'wine' : 'Water';
+// console.log(drink);
 
-let drink2
+// let drink2
 
-if (age >= 18){
-    drink2 = 'wine';
-} else {
-    drink2 = 'water';
-}
+// if (age >= 18){
+//     drink2 = 'wine';
+// } else {
+//     drink2 = 'water';
+// }
 
-console.log(drink2);
-console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`) 
+// console.log(drink2);
+// console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`) 
+
+const bill = 275;
+
+/* Write your code below. Good luck! 🙂 */
+
+const tip = 50 >= bill <= 300 ? bill * 0.15 : bill * 0.20;
+const total = bill + tip;
+
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${total}.`)
