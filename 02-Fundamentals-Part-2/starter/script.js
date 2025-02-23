@@ -1,46 +1,63 @@
 "use strict";
 
-let hasDriversLicence = false;
-const passTest = true;
+// let hasDriversLicence = false;
+// const passTest = true;
 
-if (passTest) hasDriversLicence = true;
-if (hasDriversLicence) console.log("I can drive :D");
+// if (passTest) hasDriversLicence = true;
+// if (hasDriversLicence) console.log("I can drive :D");
 
-// const interface = 'Audio';
-// const private = 123;
+// // const interface = 'Audio';
+// // const private = 123;
 
-function logger() {
-  console.log("My name is Mark");
-}
+// function logger() {
+//   console.log("My name is Mark");
+// }
 
-// calling / running / invoking
-logger();
-logger();
+// // calling / running / invoking
+// logger();
+// logger();
 
-function fruitProcessor(apples, oranges) {
-  console.log(apples, oranges);
-  const juice = `Juice with ${apples} apples and ${oranges} oranges`;
+// function fruitProcessor(apples, oranges) {
+//   console.log(apples, oranges);
+//   const juice = `Juice with ${apples} apples and ${oranges} oranges`;
 
-  return juice;
-}
+//   return juice;
+// }
 
-const appleJuice = fruitProcessor(4, 0);
-console.log(appleJuice);
+// const appleJuice = fruitProcessor(4, 0);
+// console.log(appleJuice);
 
-const appleOrangeJuice = fruitProcessor(5, 5);
-console.log(appleOrangeJuice);
+// const appleOrangeJuice = fruitProcessor(5, 5);
+// console.log(appleOrangeJuice);
 
-const age1 = calcAge1(2001);
-console.log(`My age is 2037 is ${age1}`);
-// function declaration
-function calcAge1(birthYear) {
-  return 2037 - birthYear;
-}
+// // 34
+// const age1 = calcAge1(2001);
+// console.log(`My age is 2037 is ${age1}`);
+// // function declaration
+// function calcAge1(birthYear) {
+//   return 2037 - birthYear;
+// }
 
-//function expression
-const calcAge2 = function (birthYear) {
-  return 2037 - birthYear;
+// //function expression
+// const calcAge2 = function (birthYear) {
+//   return 2037 - birthYear;
+// };
+
+// const age2 = calcAge2(2001);
+// console.log(age1, age2);
+
+const year = 2037;
+const calcAge3 = (birthYear) => 2037 - birthYear;
+const age3 = calcAge3(2001);
+
+console.log(age3);
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+  const age = year - birthYear;
+  const retirement = 65 - age;
+  return `${firstName} retires in ${retirement} years`;
 };
 
-const age2 = calcAge2(2001);
-console.log(age1, age2);
+console.log(yearsUntilRetirement(2001, "Mark"));
+console.log(yearsUntilRetirement(2000, "John"));
+console.log(yearsUntilRetirement(2005));
