@@ -155,26 +155,52 @@
 // ]
 // console.log(ages)
 
-// 40
-const places = ["Cavite", "Manila", "Tarlac"];
-places.push('Baguio');
-console.log(places);
-places.unshift('Batangas');
-console.log(places);
+// // 40
+// const places = ["Cavite", "Manila", "Tarlac"];
+// places.push('Baguio');
+// console.log(places);
+// places.unshift('Batangas');
+// console.log(places);
 
-//Remove element
-places.pop(); //last
-console.log(places)
+// //Remove element
+// places.pop(); //last
+// console.log(places)
 
-places.shift(); //first
-console.log(places);
+// places.shift(); //first
+// console.log(places);
 
-console.log(places.indexOf("Cavite"))
-console.log(places.indexOf("Mindanao"))
+// console.log(places.indexOf("Cavite"))
+// console.log(places.indexOf("Mindanao"))
 
-console.log(places.includes("Cavite"))
-console.log(places.includes("Mindanao"))
+// console.log(places.includes("Cavite"))
+// console.log(places.includes("Mindanao"))
 
-if (places.includes("Cavite")){
-  console.log("You have been to Cavite")
+// if (places.includes("Cavite")){
+//   console.log("You have been to Cavite")
+// }
+
+//Challenge
+
+/* Write your code below. Good luck! 🙂 */
+
+function calcTip(bill){
+  let tip = 0;
+  if (bill >= 50 && bill <= 300){
+      tip = bill * 0.15
+  }else{
+      tip = bill * 0.20
+  }
+  return tip
 }
+
+const bills = [125, 555, 44]
+const tips = [
+  calcTip(bills[0]),
+  calcTip(bills[1]),
+  calcTip(bills[2])
+  ]
+const totals = [
+  bills[0] + tips[0],
+  bills[1] + tips[1],
+  bills[2] + tips[2]
+  ]
