@@ -77,20 +77,46 @@
 
 // console.log(fruitProcessor(2, 3));
 
-const calcAge = function (birthYear) {
-  return 2037 - birthYear;
-};
-const yearsUntilRetirement = (birthYear, firstName) => {
-  const age = calcAge(birthYear);
-  const retirement = 65 - age;
+// const calcAge = function (birthYear) {
+//   return 2037 - birthYear;
+// };
+// const yearsUntilRetirement = (birthYear, firstName) => {
+//   const age = calcAge(birthYear);
+//   const retirement = 65 - age;
 
-  if (retirement > 0) {
-    return `${firstName} retires in ${retirement} years`;
-  } else {
-    const retiredYears = retirement * -1;
-    return `${firstName} is retired for ${retiredYears} years`;
-  }
-};
+//   if (retirement > 0) {
+//     return `${firstName} retires in ${retirement} years`;
+//   } else {
+//     const retiredYears = retirement * -1;
+//     return `${firstName} is retired for ${retiredYears} years`;
+//   }
+// };
 
-console.log(yearsUntilRetirement(2001, "Mark"));
-console.log(yearsUntilRetirement(1950, "John"));
+// console.log(yearsUntilRetirement(2001, "Mark"));
+// console.log(yearsUntilRetirement(1950, "John"));
+
+//Function challenge
+/* Write your code below. Good luck! 🙂 */
+
+// TODO: Arrow function calcAverage to calculate the average of 3 scores
+const calcAverage = (score1, score2, score3) => (score1 + score2 + score3)/3;
+
+// TODO: two new variables
+const scoreDolphins = calcAverage(44,23,71);
+const scoreKoalas = calcAverage(65,54,49);
+
+// Times two
+const timesTwo = score => score * 2;
+
+// TODO: checkwinner function
+function checkWinner(avgDolphins, avgKoalas){ 
+    if (avgDolphins > timesTwo(avgKoalas)){
+        console.log(`Dolphins win (${avgDolphins} vs ${avgKoalas})`)
+    } else if(avgKoalas > timesTwo(avgDolphins)){
+        console.log(`Koalas win (${avgKoalas} vs ${avgDolphins})`)
+    } else {
+        console.log(`No team wins...`)
+    }
+}
+
+checkWinner(scoreDolphins, scoreKoalas);
