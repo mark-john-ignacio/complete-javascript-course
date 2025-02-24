@@ -137,20 +137,44 @@
 // console.log(mark)
 
 // function declaration
-const caclAge = function(birthYear) {
-  return 2037 - birthYear;
+// const caclAge = function(birthYear) {
+//   return 2037 - birthYear;
+// }
+
+// const years = [2000, 2001, 2002, 2003, 2004];
+
+// const age1 = caclAge(years[0]);
+// const age2 = caclAge(years[1]);
+// const age3 = caclAge(years[years.length - 1]);
+// console.log(age1, age2, age3)
+
+// const ages = [
+//   caclAge(years[0]), 
+//   caclAge(years[1]), 
+//   caclAge(years[years.length - 1])
+// ]
+// console.log(ages)
+
+// 40
+const places = ["Cavite", "Manila", "Tarlac"];
+places.push('Baguio');
+console.log(places);
+places.unshift('Batangas');
+console.log(places);
+
+//Remove element
+places.pop(); //last
+console.log(places)
+
+places.shift(); //first
+console.log(places);
+
+console.log(places.indexOf("Cavite"))
+console.log(places.indexOf("Mindanao"))
+
+console.log(places.includes("Cavite"))
+console.log(places.includes("Mindanao"))
+
+if (places.includes("Cavite")){
+  console.log("You have been to Cavite")
 }
-
-const years = [2000, 2001, 2002, 2003, 2004];
-
-const age1 = caclAge(years[0]);
-const age2 = caclAge(years[1]);
-const age3 = caclAge(years[years.length - 1]);
-console.log(age1, age2, age3)
-
-const ages = [
-  caclAge(years[0]), 
-  caclAge(years[1]), 
-  caclAge(years[years.length - 1])
-]
-console.log(ages)
