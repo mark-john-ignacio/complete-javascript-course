@@ -95,28 +95,62 @@
 // console.log(yearsUntilRetirement(2001, "Mark"));
 // console.log(yearsUntilRetirement(1950, "John"));
 
-//Function challenge
-/* Write your code below. Good luck! 🙂 */
+// //Function challenge
+// /* Write your code below. Good luck! 🙂 */
 
-// TODO: Arrow function calcAverage to calculate the average of 3 scores
-const calcAverage = (score1, score2, score3) => (score1 + score2 + score3)/3;
+// // TODO: Arrow function calcAverage to calculate the average of 3 scores
+// const calcAverage = (score1, score2, score3) => (score1 + score2 + score3)/3;
 
-// TODO: two new variables
-const scoreDolphins = calcAverage(44,23,71);
-const scoreKoalas = calcAverage(65,54,49);
+// // TODO: two new variables
+// const scoreDolphins = calcAverage(44,23,71);
+// const scoreKoalas = calcAverage(65,54,49);
 
-// Times two
-const timesTwo = score => score * 2;
+// // Times two
+// const timesTwo = score => score * 2;
 
-// TODO: checkwinner function
-function checkWinner(avgDolphins, avgKoalas){ 
-    if (avgDolphins > timesTwo(avgKoalas)){
-        console.log(`Dolphins win (${avgDolphins} vs ${avgKoalas})`)
-    } else if(avgKoalas > timesTwo(avgDolphins)){
-        console.log(`Koalas win (${avgKoalas} vs ${avgDolphins})`)
-    } else {
-        console.log(`No team wins...`)
-    }
+// // TODO: checkwinner function
+// function checkWinner(avgDolphins, avgKoalas){ 
+//     if (avgDolphins >= timesTwo(avgKoalas)){
+//         console.log(`Dolphins win (${avgDolphins} vs ${avgKoalas})`)
+//     } else if(avgKoalas >= timesTwo(avgDolphins)){
+//         console.log(`Koalas win (${avgKoalas} vs ${avgDolphins})`)
+//     } else {
+//         console.log(`No team wins...`)
+//     }
+// }
+
+// checkWinner(scoreDolphins, scoreKoalas);
+
+// const heroes = ["Rizal", "Luna", "Mabini"]
+
+// const years = new Array(2020, 2021, 2022)
+
+// console.log(heroes[0])
+// console.log(heroes.length)
+// console.log(heroes[heroes.length-1])
+
+// heroes[2] = "Apolinario"
+// console.log(heroes)
+
+// const mark = ['Mark', 'John', 1000, heroes]
+
+// console.log(mark)
+
+// function declaration
+const caclAge = function(birthYear) {
+  return 2037 - birthYear;
 }
 
-checkWinner(scoreDolphins, scoreKoalas);
+const years = [2000, 2001, 2002, 2003, 2004];
+
+const age1 = caclAge(years[0]);
+const age2 = caclAge(years[1]);
+const age3 = caclAge(years[years.length - 1]);
+console.log(age1, age2, age3)
+
+const ages = [
+  caclAge(years[0]), 
+  caclAge(years[1]), 
+  caclAge(years[years.length - 1])
+]
+console.log(ages)
