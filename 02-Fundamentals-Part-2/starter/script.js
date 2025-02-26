@@ -109,7 +109,7 @@
 // const timesTwo = score => score * 2;
 
 // // TODO: checkwinner function
-// function checkWinner(avgDolphins, avgKoalas){ 
+// function checkWinner(avgDolphins, avgKoalas){
 //     if (avgDolphins >= timesTwo(avgKoalas)){
 //         console.log(`Dolphins win (${avgDolphins} vs ${avgKoalas})`)
 //     } else if(avgKoalas >= timesTwo(avgDolphins)){
@@ -149,8 +149,8 @@
 // console.log(age1, age2, age3)
 
 // const ages = [
-//   caclAge(years[0]), 
-//   caclAge(years[1]), 
+//   caclAge(years[0]),
+//   caclAge(years[1]),
 //   caclAge(years[years.length - 1])
 // ]
 // console.log(ages)
@@ -183,14 +183,14 @@
 
 /* Write your code below. Good luck! 🙂 */
 
-function calcTip(bill){
+function calcTip(bill) {
   let tip = 0;
-  if (bill >= 50 && bill <= 300){
-      tip = bill * 0.15
-  }else{
-      tip = bill * 0.20
+  if (bill >= 50 && bill <= 300) {
+    tip = bill * 0.15;
+  } else {
+    tip = bill * 0.2;
   }
-  return tip
+  return tip;
 }
 
 // const calcTip = function(bill){
@@ -204,8 +204,8 @@ function calcTip(bill){
 // }
 
 // const calcTip = function(bill){
-//   return bill >= 50 && bill <= 300 
-//   ? bill * 0.15 
+//   return bill >= 50 && bill <= 300
+//   ? bill * 0.15
 //   : bill * 0.20
 // }
 
@@ -227,5 +227,33 @@ const mark = {
   lastName: "Ignacio",
   age: 2037 - 2001,
   job: "developer",
-  friends: ["AJ", "JM", "Menard"]
+  friends: ["AJ", "JM", "Menard"],
+};
+console.log(mark);
+
+console.log(mark.lastName);
+console.log(mark["lastName"]);
+
+const nameKey = "Name";
+console.log(mark["first" + nameKey]);
+console.log(mark["last" + nameKey]);
+
+const interestedIn = prompt(
+  "What do you want to know about Mark? Choose between firstName, lastName, age, job, and friends"
+);
+
+if (mark[interestedIn]) {
+  console.log(mark[interestedIn]);
+} else {
+  console.log("It doesn't exist");
 }
+
+mark.location = "Cavite";
+mark["hobby"] = "Chess";
+
+console.log(mark);
+
+// Challenge
+console.log(
+  `${mark.firstName} has ${mark.friends.length} friends, and his best friend is called ${mark.friends[0]}`
+);
