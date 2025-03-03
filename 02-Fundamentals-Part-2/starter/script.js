@@ -221,39 +221,106 @@ function calcTip(bill) {
 //   bills[2] + tips[2]
 //   ]
 
-// Objects
+// // Objects
+// const mark = {
+//   firstName: "Mark",
+//   lastName: "Ignacio",
+//   age: 2037 - 2001,
+//   job: "developer",
+//   friends: ["AJ", "JM", "Menard"],
+// };
+// console.log(mark);
+
+// console.log(mark.lastName);
+// console.log(mark["lastName"]);
+
+// const nameKey = "Name";
+// console.log(mark["first" + nameKey]);
+// console.log(mark["last" + nameKey]);
+
+// const interestedIn = prompt(
+//   "What do you want to know about Mark? Choose between firstName, lastName, age, job, and friends"
+// );
+
+// if (mark[interestedIn]) {
+//   console.log(mark[interestedIn]);
+// } else {
+//   console.log("It doesn't exist");
+// }
+
+// mark.location = "Cavite";
+// mark["hobby"] = "Chess";
+
+// console.log(mark);
+
+// // Challenge
+// console.log(
+//   `${mark.firstName} has ${mark.friends.length} friends, and his best friend is called ${mark.friends[0]}`
+// );
+
+
+// const mark = {
+//   firstName: "Mark",
+//   lastName: "Ignacio",
+//   birthYear: 2001,
+//   job: "developer",
+//   friends: ["AJ", "JM", "Menard"],
+//   hasDriversLicense: true,
+
+//   // caclAge: function(birthYear){
+//   //   return 2037 - birthYear;
+//   // }
+
+//   // caclAge: function(){
+//   //   return 2037 - this.birthYear;
+//   // }
+
+//   caclAge: function(){
+//     this.age = 2037 - this.birthYear;
+//     return this.age;
+//   },
+
+//   getSummary: function(){
+//     return `${this.firstName} is a ${this.age}-year old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license`
+//   }
+// };
+
+// console.log(mark.caclAge());
+// // console.log(mark['caclAge'](2001));
+// console.log(mark.age);
+
+// console.log(mark.getSummary());
+
+/* Write your code below. Good luck! 🙂 */
+
 const mark = {
-  firstName: "Mark",
-  lastName: "Ignacio",
-  age: 2037 - 2001,
-  job: "developer",
-  friends: ["AJ", "JM", "Menard"],
-};
-console.log(mark);
-
-console.log(mark.lastName);
-console.log(mark["lastName"]);
-
-const nameKey = "Name";
-console.log(mark["first" + nameKey]);
-console.log(mark["last" + nameKey]);
-
-const interestedIn = prompt(
-  "What do you want to know about Mark? Choose between firstName, lastName, age, job, and friends"
-);
-
-if (mark[interestedIn]) {
-  console.log(mark[interestedIn]);
-} else {
-  console.log("It doesn't exist");
+  fullName: "Mark Miller",
+  mass: 78,
+  height:1.69,
+  calcBMI: function(){
+      this.bmi= this.mass / (this.height * this.height)
+      return this.bmi
+  }
 }
 
-mark.location = "Cavite";
-mark["hobby"] = "Chess";
+const john = {
+  fullName: "Mark Miller",
+  mass: 92,
+  height:1.95,
+  calcBMI: function(){
+      this.bmi= this.mass / (this.height * this.height)
+      return this.bmi
+  }
+}
 
-console.log(mark);
+let winner;
+let loser;
+if(mark.calcBMI() > john.calcBMI()){
+  winner = mark;
+  loser = john
+} else if (john.calcBMI() > mark.calcBMI()){
+  winner = john;
+  loser = mark
+}
 
-// Challenge
-console.log(
-  `${mark.firstName} has ${mark.friends.length} friends, and his best friend is called ${mark.friends[0]}`
-);
+console.log(`${winner.fullName}'s BMI (${winner.calcBMI()}) is higher than ${loser.fullName}'s (${loser.calcBMI()})`)
