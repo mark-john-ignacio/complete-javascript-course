@@ -181,17 +181,17 @@
 
 //Challenge
 
-/* Write your code below. Good luck! 🙂 */
+// /* Write your code below. Good luck! 🙂 */
 
-function calcTip(bill) {
-  let tip = 0;
-  if (bill >= 50 && bill <= 300) {
-    tip = bill * 0.15;
-  } else {
-    tip = bill * 0.2;
-  }
-  return tip;
-}
+// function calcTip(bill) {
+//   let tip = 0;
+//   if (bill >= 50 && bill <= 300) {
+//     tip = bill * 0.15;
+//   } else {
+//     tip = bill * 0.2;
+//   }
+//   return tip;
+// }
 
 // const calcTip = function(bill){
 //   let tip = 0;
@@ -291,36 +291,82 @@ function calcTip(bill) {
 
 // console.log(mark.getSummary());
 
-/* Write your code below. Good luck! 🙂 */
+// /* Write your code below. Good luck! 🙂 */
 
-const mark = {
-  fullName: "Mark Miller",
-  mass: 78,
-  height:1.69,
-  calcBMI: function(){
-      this.bmi= this.mass / (this.height * this.height)
-      return this.bmi
-  }
+// const mark = {
+//   fullName: "Mark Miller",
+//   mass: 78,
+//   height:1.69,
+//   calcBMI: function(){
+//       this.bmi= this.mass / (this.height * this.height)
+//       return this.bmi
+//   }
+// }
+
+// const john = {
+//   fullName: "Mark Miller",
+//   mass: 92,
+//   height:1.95,
+//   calcBMI: function(){
+//       this.bmi= this.mass / (this.height * this.height)
+//       return this.bmi
+//   }
+// }
+
+// let winner;
+// let loser;
+// if(mark.calcBMI() > john.calcBMI()){
+//   winner = mark;
+//   loser = john
+// } else if (john.calcBMI() > mark.calcBMI()){
+//   winner = john;
+//   loser = mark
+// }
+
+// console.log(`${winner.fullName}'s BMI (${winner.bmi}) is higher than ${loser.fullName}'s (${loser.bmi})`)
+
+for (let rep=1; rep <=10; rep++){
+  console.log(`Lifting weights repetition ${rep} 🏋️`)
 }
 
-const john = {
-  fullName: "Mark Miller",
-  mass: 92,
-  height:1.95,
-  calcBMI: function(){
-      this.bmi= this.mass / (this.height * this.height)
-      return this.bmi
-  }
+const types = [];
+
+const markArray = [
+  'Mark',
+  'Ignacio',
+  2037-2001,
+  'developer',
+  ['aj', 'menard', 'jm'],
+  true
+];
+
+for(let i = 0; i < markArray.length ; i++){
+  console.log(markArray[i], typeof markArray[i])
+
+  // Filling types array
+  // types[i] = typeof markArray[i];
+  types.push(typeof markArray[i])
 }
 
-let winner;
-let loser;
-if(mark.calcBMI() > john.calcBMI()){
-  winner = mark;
-  loser = john
-} else if (john.calcBMI() > mark.calcBMI()){
-  winner = john;
-  loser = mark
+console.log(types)
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for(let i = 0; i < years.length; i++){
+  ages.push(2037 - years[i]);
+}
+console.log(ages);
+
+//continue and break
+console.log(`==== ONLY STRING ===`)
+for(let i = 0; i < markArray.length ; i++){
+  if(typeof markArray[i] !== 'string') continue;
+  console.log(markArray[i], typeof markArray[i])
 }
 
-console.log(`${winner.fullName}'s BMI (${winner.calcBMI()}) is higher than ${loser.fullName}'s (${loser.calcBMI()})`)
+console.log(`==== BREAK WITH NUMBER ===`)
+for(let i = 0; i < markArray.length ; i++){
+  if(typeof markArray[i] === 'number') break;
+  console.log(markArray[i], typeof markArray[i])
+}
