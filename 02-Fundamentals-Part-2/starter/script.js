@@ -373,24 +373,40 @@
 
 //Lopping backwards
 
-const markArray = [
-  'Mark',
-  'Ignacio',
-  2037-2001,
-  'developer',
-  ['aj', 'menard', 'jm'],
-];
+// const markArray = [
+//   'Mark',
+//   'Ignacio',
+//   2037-2001,
+//   'developer',
+//   ['aj', 'menard', 'jm'],
+// ];
 
 
-for(let i=(markArray.length-1); i >= 0; i--){
-  console.log(i, markArray[i])
-}
+// for(let i=(markArray.length-1); i >= 0; i--){
+//   console.log(i, markArray[i])
+// }
 
 
-for (let exercise=1; exercise <=4; exercise++){
-  console.log(`-----Starting exercise ${exercise} 🏋️--------`)
+// for (let exercise=1; exercise <=4; exercise++){
+//   console.log(`-----Starting exercise ${exercise} 🏋️--------`)
 
-  for(let rep = 1; rep < 6; rep++){
-    console.log(`Exercise ${exercise}: Lifting weight repetition ${rep}`)
-  }
+//   for(let rep = 1; rep < 6; rep++){
+//     console.log(`Exercise ${exercise}: Lifting weight repetition ${rep}`)
+//   }
+// }
+
+// console.log("WHILE LOOP")
+// let rep = 1
+// while (rep <= 10 ){
+
+//   console.log(`Lifting weights repetition ${rep} 🏋️`)
+//   rep ++;
+// }
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+  console.log(`You rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if(dice == 6) console.log(`The loop is about to end...`)
 }
