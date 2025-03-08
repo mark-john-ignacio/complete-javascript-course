@@ -325,11 +325,53 @@
 
 // console.log(`${winner.fullName}'s BMI (${winner.bmi}) is higher than ${loser.fullName}'s (${loser.bmi})`)
 
-for (let rep=1; rep <=10; rep++){
-  console.log(`Lifting weights repetition ${rep} 🏋️`)
-}
+// for (let rep=1; rep <=10; rep++){
+//   console.log(`Lifting weights repetition ${rep} 🏋️`)
+// }
 
-const types = [];
+// const types = [];
+
+// const markArray = [
+//   'Mark',
+//   'Ignacio',
+//   2037-2001,
+//   'developer',
+//   ['aj', 'menard', 'jm'],
+//   true
+// ];
+
+// for(let i = 0; i < markArray.length ; i++){
+//   console.log(markArray[i], typeof markArray[i])
+
+//   // Filling types array
+//   // types[i] = typeof markArray[i];
+//   types.push(typeof markArray[i])
+// }
+
+// console.log(types)
+
+// const years = [1991, 2007, 1969, 2020];
+// const ages = [];
+
+// for(let i = 0; i < years.length; i++){
+//   ages.push(2037 - years[i]);
+// }
+// console.log(ages);
+
+// //continue and break
+// console.log(`==== ONLY STRING ===`)
+// for(let i = 0; i < markArray.length ; i++){
+//   if(typeof markArray[i] !== 'string') continue;
+//   console.log(markArray[i], typeof markArray[i])
+// }
+
+// console.log(`==== BREAK WITH NUMBER ===`)
+// for(let i = 0; i < markArray.length ; i++){
+//   if(typeof markArray[i] === 'number') break;
+//   console.log(markArray[i], typeof markArray[i])
+// }
+
+//Lopping backwards
 
 const markArray = [
   'Mark',
@@ -337,36 +379,18 @@ const markArray = [
   2037-2001,
   'developer',
   ['aj', 'menard', 'jm'],
-  true
 ];
 
-for(let i = 0; i < markArray.length ; i++){
-  console.log(markArray[i], typeof markArray[i])
 
-  // Filling types array
-  // types[i] = typeof markArray[i];
-  types.push(typeof markArray[i])
+for(let i=(markArray.length-1); i >= 0; i--){
+  console.log(i, markArray[i])
 }
 
-console.log(types)
 
-const years = [1991, 2007, 1969, 2020];
-const ages = [];
+for (let exercise=1; exercise <=4; exercise++){
+  console.log(`-----Starting exercise ${exercise} 🏋️--------`)
 
-for(let i = 0; i < years.length; i++){
-  ages.push(2037 - years[i]);
-}
-console.log(ages);
-
-//continue and break
-console.log(`==== ONLY STRING ===`)
-for(let i = 0; i < markArray.length ; i++){
-  if(typeof markArray[i] !== 'string') continue;
-  console.log(markArray[i], typeof markArray[i])
-}
-
-console.log(`==== BREAK WITH NUMBER ===`)
-for(let i = 0; i < markArray.length ; i++){
-  if(typeof markArray[i] === 'number') break;
-  console.log(markArray[i], typeof markArray[i])
+  for(let rep = 1; rep < 6; rep++){
+    console.log(`Exercise ${exercise}: Lifting weight repetition ${rep}`)
+  }
 }
