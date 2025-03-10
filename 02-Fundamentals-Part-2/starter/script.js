@@ -403,10 +403,41 @@
 //   rep ++;
 // }
 
-let dice = Math.trunc(Math.random() * 6) + 1;
+// let dice = Math.trunc(Math.random() * 6) + 1;
 
-while (dice !== 6) {
-  console.log(`You rolled a ${dice}`);
-  dice = Math.trunc(Math.random() * 6) + 1;
-  if(dice == 6) console.log(`The loop is about to end...`)
+// while (dice !== 6) {
+//   console.log(`You rolled a ${dice}`);
+//   dice = Math.trunc(Math.random() * 6) + 1;
+//   if(dice == 6) console.log(`The loop is about to end...`)
+// }
+
+const calcTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 }
+
+/* Write your code below. Good luck! 🙂 */
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+let tips = [];
+let totals = [];
+
+for (let i = 0; i < bills.length; i++){
+    tips[i] = calcTip(bills[i]);
+    totals[i] = tips[i] + bills[i];
+}
+
+console.log("Tips and Totals")
+console.log(tips)
+console.log(totals)
+
+
+const calcAverage = function (arr){
+  let sum = 0;
+  for(let i = 0; i < arr.length; i++){
+    sum += arr[i];
+  }
+  return sum/arr.length;
+}
+
+console.log(calcAverage(totals));
+
