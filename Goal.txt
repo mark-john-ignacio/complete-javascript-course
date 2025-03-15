@@ -1,0 +1,47 @@
+I want to become a front end developer paired with my backend laravel skills. I want to learn React and Vue for this year by June 2025 so I can apply to these full stack jobs.
+
+I want to be able to build
+🐾 PetAdopt PH – A Simple Pet Adoption Platform
+Core Features (MVP)
+✅ Browse Pets for Adoption – Users can view a list of adoptable pets with photos, descriptions, and location.
+✅ Post Pets for Adoption – Pet owners/shelters can create listings with pet details (name, age, breed, location, etc.).
+✅ Adoption Requests – Interested adopters can send inquiries via a simple request form.
+✅ User Authentication – Sign up/login with email & password (or social login via Google/Facebook).
+✅ Admin Panel (Basic) – Manage pet listings and user accounts (approve/delete listings).
+
+Tech Stack
+Frontend: React or Vue (with Tailwind CSS for clean UI)
+Backend: Laravel (API-based with Sanctum for authentication)
+Database: MySQL (storing users & pet listings)
+Image Uploads: Laravel + Cloudinary (or local storage for now)
+Authentication: Laravel Sanctum (or Firebase for social login)
+App Flow
+1️⃣ Home Page: Browse available pets
+2️⃣ Pet Listing Page: View details & contact the pet owner
+3️⃣ Post Adoption Page: Logged-in users can post pets for adoption
+4️⃣ User Dashboard: See submitted requests & posted pets
+5️⃣ Admin Panel: Approve/delete pet listings
+
+Future Enhancements (if you want to expand later 🚀)
+Real-time chat between adopters and pet owners
+Location-based search to find nearby pets
+Reviews for adopters/shelters to ensure responsible adoption
+Pet health records (vaccinations, vet visits)
+
+
+By the end of the year 2025
+
+-----
+Always type code
+Small coding exercises
+
+Practice outside
+Just code
+Embrace you will not know everything
+
+Explain to others
+Share goals
+Share online
+
+Courses is just a foundation
+

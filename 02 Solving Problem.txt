@@ -1,0 +1,10 @@
+Calm down 
+
+Make sure to understand the problem 100 percent
+Ask right Questions until it is clear
+
+Divide and Conquer: Divide problem into smaller sub-problems
+
+Do as much research
+
+For bigger problems, write pseudo-code before writing the actual code
