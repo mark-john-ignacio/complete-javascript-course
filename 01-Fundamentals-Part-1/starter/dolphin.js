@@ -2,7 +2,7 @@
 
 
 const dolphins = [96, 108, 89];
-const koalas = [88, 91, 125];
+const koalas = [88, 91, 110];
 const minimum = 100;
 
 const sum_dolphins = dolphins.reduce((accumulator, currentValue)=>{
